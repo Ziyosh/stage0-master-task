@@ -43,7 +43,7 @@ Where number - variable that should be used within the program.
 
 #### Task 2. Digits sum calculator.
 
-You will be given a four-digit number your task will be to find the sum of all digits in the
+****You will be given a four-digit number your task will be to find the sum of all digits in the
 given number. Code snippet:
 
         public class DigitsSumCalculator {
@@ -51,7 +51,7 @@ given number. Code snippet:
             }
         }
 
-Where number - variable that should be used within the program.
+Where number - variable that should be used within the program.****
 
 ## Conditions
 
