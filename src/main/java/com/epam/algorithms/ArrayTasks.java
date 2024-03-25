@@ -1,7 +1,5 @@
 package com.epam.algorithms;
 
-import java.util.Arrays;
-
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -14,12 +12,7 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
 
-        String[] my_array = {"winter", "spring", "summer", "autumn"};
-
-        for(String i : my_array){
-            System.out.println(i);
-        }
-        return my_array;
+        return new String[] {"winter", "spring", "summer", "autumn"};
     }
 
     /**
@@ -33,9 +26,9 @@ public class ArrayTasks {
     public int[] generateNumbers(int length) {
 
        int[] numbers = new int[length];
-
        for(int i=0; i<length; i++){
            numbers[i] = i + 1;
+           System.out.println(numbers[i]);
        }
         return numbers;
     }
@@ -50,7 +43,7 @@ public class ArrayTasks {
     public int totalSum(int[] arr) {
         int sum=0;
         for(int i : arr){
-            sum += arr[i];
+            sum += i;
         }
         return sum;
     }
@@ -102,7 +95,7 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
 
-        for(int i=0; i<arr.length; i++){
+        for(int i: arr){
             if(arr[i] > 0){
                 System.out.println(arr[i]);
             }
@@ -120,10 +113,6 @@ public class ArrayTasks {
      * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]] arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
     public int[][] sortRaggedArray(int[][] arr) {
-
-        Arrays.toString(arr);
-        Arrays.sort(arr);
-        Arrays.toString(arr);
         return arr;
     }
 }
