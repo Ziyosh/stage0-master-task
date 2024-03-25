@@ -95,12 +95,23 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
 
-        for(int i: arr){
-            if(arr[i] > 0){
-                System.out.println(arr[i]);
+        int count=0;
+        for(int num: arr){
+            if(num > 0){ // Count the number of positive numbers in the array
+                count++;
             }
         }
-        return arr;
+
+        int[] positiveArray = new int[count]; // Create a new array to store the positive numbers
+        int index=0;
+
+        for(int num: arr){
+            if(num>0){
+                positiveArray[index] = num;
+                index++;
+            }
+        }
+        return positiveArray;
     }
 
     /**
